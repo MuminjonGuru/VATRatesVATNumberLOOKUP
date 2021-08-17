@@ -9,6 +9,7 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
+// set vatlookupRouter for /vatlookup endpoint
 const vatlookupRouter = require('./src/routes/vatlookup')
 app.use('/vatlookup', vatlookupRouter)
 
